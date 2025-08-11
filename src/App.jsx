@@ -24,7 +24,7 @@ const App = () => {
   ];
 
   const addToBurger = (ingredient) => {
-    setStack([ingredient, ...stack]); // adds to "top" of stack
+    setStack([ingredient, ...stack]); 
   };
 
   const removeFromBurger = (index) => {
