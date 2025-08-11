@@ -1,6 +1,6 @@
 // src/components/IngredientList/IngredientList.jsx
 
-const IngredientList = ({ ingredients, addToStack }) => {
+const IngredientList = ({ ingredients, addToBurger }) => {
   return (
     <div>
       <h2>Available Ingredients</h2>
@@ -16,7 +16,7 @@ const IngredientList = ({ ingredients, addToStack }) => {
             >
               {ingredient.name}
             </span>
-            <button onClick={() => addToStack(ingredient)}>+</button>
+            <button onClick={() => addToBurger(ingredient)}>+</button>
           </li>
         ))}
       </ul>

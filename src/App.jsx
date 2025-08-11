@@ -23,11 +23,11 @@ const App = () => {
     { name: 'Swiss Cheese', color: '#F1E1A8' },
   ];
 
-  const addToStack = (ingredient) => {
+  const addToBurger = (ingredient) => {
     setStack([ingredient, ...stack]); // adds to "top" of stack
   };
 
-  const removeFromStack = (index) => {
+  const removeFromBurger = (index) => {
     const newStack = [...stack];
     newStack.splice(index, 1);
     setStack(newStack);
@@ -39,11 +39,11 @@ const App = () => {
       <div style={{ display: 'flex', gap: '2rem' }}>
         <IngredientList 
           ingredients={availableIngredients} 
-          addToStack={addToStack} 
+          addToBurger={addToBurger} 
         />
         <BurgerStack 
           stack={stack} 
-          removeFromStack={removeFromStack} 
+          removeFromBurger={removeFromBurger} 
         />
       </div>
     </main>

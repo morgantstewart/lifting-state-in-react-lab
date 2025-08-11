@@ -1,5 +1,5 @@
 
-const BurgerStack = ({ stack, removeFromStack }) => {
+const BurgerStack = ({ stack, removeFromBurger }) => {
   return (
     <div>
       <h2>Your Burger Stack</h2>
@@ -15,7 +15,7 @@ const BurgerStack = ({ stack, removeFromStack }) => {
             >
               {ingredient.name}
             </span>
-            <button onClick={() => removeFromStack(index)}>X</button>
+            <button onClick={() => removeFromBurger(index)}>X</button>
           </li>
         ))}
       </ul>
