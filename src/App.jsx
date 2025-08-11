@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import IngredientList from './IngredientList';
-import BurgerStack from './BurgerStack';
+import IngredientList from "./components/IngredientList";
+import BurgerStack from "./components/BurgerStack";
 
 const App = () => {
   const [stack, setStack] = useState([]);
@@ -39,3 +39,15 @@ const App = () => {
       <div style={{ display: 'flex', gap: '2rem' }}>
         <IngredientList 
           ingredients={availableIngredients} 
+          addToStack={addToStack} 
+        />
+        <BurgerStack 
+          stack={stack} 
+          removeFromStack={removeFromStack} 
+        />
+      </div>
+    </main>
+  );
+};
+
+export default App;
