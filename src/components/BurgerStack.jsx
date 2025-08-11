@@ -24,6 +24,3 @@ const BurgerStack = ({ stack, removeFromStack }) => {
 };
 
 export default BurgerStack;
-
-
-export default BurgerStack;

@@ -25,5 +25,3 @@ const IngredientList = ({ ingredients, addToStack }) => {
 };
 
 export default IngredientList;
-
-export default IngredientList;
